@@ -1,15 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>THE Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meejan Maharjan - Portfolio</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Meejan Maharjan</h1>
-	</header>
-	<img src="https://cdn.britannica.com/91/157291-004-C57D79E2.jpg">
+    <!-- Header Section-->
+    <header>
+        <div class="header-content">
+            <h1>My portfolio</h1>
+        </div>
+        <nav>
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello! I'm Meejan Maharjan, a passionate developer and creative problem solver. I love building innovative solutions and bringing ideas to life through code.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="PFP.jpeg" alt="Profile" class="profile-img">
+                <div class="about-text">
+                    <p>I'm a web developer from Kathmandu, Nepal, with a strong foundation in web development and a keen eye for design. I strive to create meaningful digital experiences.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying the beautiful landscapes of Nepal.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Git & GitHub</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>My Projects</h2>
+            
+            <div class="project">
+                <img src="Weater.png" alt="Weather App">
+                <div class="project-content">
+                    <h3>Weather App</h3>
+                    <p>A real-time weather application that provides current conditions, forecasts, and meteorological data for any location worldwide. Features an intuitive interface with dynamic weather animations, temperature trends, and detailed information including humidity, wind speed.</p>
+                    <p class="tags">HTML | CSS | JavaScript</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="Bank system.png" alt="Banking System">
+                <div class="project-content">
+                    <h3>Banking System</h3>
+                    <p>A secure digital banking platform that enables users to manage accounts, transfer funds, and track transactions with ease. Built with robust authentication and encryption to ensure data security, featuring balance inquiries, payment processing, transaction history, and comprehensive account management tools.</p>
+                    <p class="tags">Java</p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="Game.jpg" alt="Game Design">
+                <div class="project-content">
+                    <h3>Game Design</h3>
+                    <p>An immersive gaming experience featuring engaging gameplay mechanics, stunning visuals, and intuitive controls. Designed with player progression systems, challenging levels, and interactive environments that provide hours of entertainment while maintaining smooth performance across different devices.</p>
+                    <p class="tags">Unity | C#</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Send Me A Message</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year"></span> Meejan Maharjan. All rights reserved.</p>
+        <div class="social">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <a>📱+977 9813939581</a>
+        </div>
+    </footer>
+
 </body>
 </html>
